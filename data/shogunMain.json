@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "Character": "John Blackthorne (aka Anjin-san)",
+    "Role": "The English pilot known politely as Anjin, rudely as 'The Barbarian', or as 'The Heretic' to the Christians.",
+    "Gender": 1,
+    "Personality": "Restless, adventurous and confident. A man on a mission.",
+    "About": "Blackthorne is a Protestant English pilot who goes to sea seeking a new life and destiny. When he washes up in Japan on the eve of a civil war, he becomes 'Anjin' (pilot) unwavering determination to challenge the Catholic trade monopoly keeps him alive and propels him into the center of a volatile political conflict.",
+    "Actor": "Cosmo Jarvis",
+    "IMDb": "https://www.imdb.com/name/nm4008605"
+  },
+  {
+    "id": 3,
+    "Character": "Lord Yoshi Toranaga - 2024 Emmy for Lead Actor",
+    "Role": "Lead male role - Lord of the Edo Province from the feared Minowara lineage.",
+    "Gender": 1,
+    "Personality": "Lord Toranaga is a brilliant strategist and a fierce leader. He is steps ahead of others when strategizing and fearless when it comes to facing death or impeachment.",
+    "About": "A powerful bushō from a feared lineage, Toranaga is lord of the expansive Kanto region. He is isolated and outnumbered by his enemies in Osaka Castle when the story begins. But little does anyone realize that Toranaga is a brilliant strategist and a master of the long game.",
+    "Actor": "Hiroyuki Sanada",
+    "IMDb": "https://www.imdb.com/name/nm0760796"
+  },
+  {
+    "id": 5,
+    "Character": "Lady Mariko - 2024 Emmy for Lead Actress",
+    "Role": "Lead Female role - Toranaga’s loyal vassal as translator for the Anjin",
+    "Gender": 2,
+    "Personality": "A devout Christian, Mariko is deeply faithful yet also wants to avenge her family. Loyal to Toranaga.",
+    "About": "A poised and mysterious highborn woman, Mariko plays a key role in the future of Japan. She is married to Buntaro, more in duty than in love, and is a devoted Christian. Highly educated and fiercely loyal, she is trusted by her lord, Toranaga.",
+    "Actor": "Anna Sawai",
+    "IMDb": "https://www.imdb.com/name/nm3660091"
+  },
+  {
+    "id": 7,
+    "Character": "Ochiba-no-Kato",
+    "Role": "The Mother of the Heir",
+    "Gender": 2,
+    "Personality": "Ruthless and calculating.",
+    "About": "The highest-ranking woman in Japan, Ochiba-no-kata is the feared and admired mother of the Heir. As a consort to the late Taikō and the only one to bear him a child, she wields significant political influence in Osaka.",
+    "Actor": "Fumi Nikaido",
+    "IMDb": "https://www.imdb.com/name/nm3049403"
+  },
+
+
+  
+  
+  
+  {
+    "id": 11,
+    "Character": "Kashigi Yabushige",
+    "Role": "Opportunistic warlord who plays on both sides of the conflict.",
+    "Gender": 1,
+    "Personality": "Yabushige is a charming charismatic man. He is brilliant, strategic, and fickle. Can be brutal when it comes to killing.",
+    "About": "Charismatic, brilliant, and brutal, Yabushige is lord of Izu within the Kanto region. While he serves Toranaga, he peddles his treachery to get ahead or sometimes to simply survive, all the while changing his loyalties accordingly.",
+    "Actor": "Tadanobu Asano",
+    "IMDb": "https://www.imdb.com/name/nm0038355"
+  },
+  {
+    "id": 9,
+    "Character": "Usami Fuji",
+    "Role": "Consort assigned to the Anjin",
+    "Gender": 2,
+    "Personality": "Fuji is a graceful, caring person who is protective of the ones she loves.",
+    "About": "Usami Fuji's young life is marked by terrible tragedy which she faces with honor. Thanks to her unwavering sense of self as a highborn lady of nobility, she faces her duties with bravery and strength. She is the granddaughter of Hiromatsu, Toranaga's closest friend.",
+    "Actor": "Moeka Hoshi",
+    "IMDb": "https://www.imdb.com/name/nm8972774"
+  },
+  {
+    "id": 13,
+    "Character": "Ishido Kazunari",
+    "Role": "Main antagonist - warlord trying to seize all power.",
+    "Gender": 1,
+    "Personality": "Ishido is ruthless, cunning, and power-hungry.",
+    "About": "A former peasant, Ishido has raised himself to all-powerful bushō, a member of the Council of Regents and the protector of Osaka Castle. He hates his low birth but despises those highborn even more. Ishido will stop at nothing to remove Toranaga from the council and neutralize him as a threat to Ishido’s own power.",
+    "Actor": "Takehiro Hira",
+    "IMDb": "https://www.imdb.com/name/nm3042346"
+  },
+  {
+    "id": 15,
+    "Character": "Father Alvito",
+    "Role": "Devoted missionary, accomplished Portuguese-Japanese translator.",
+    "Gender": 1,
+    "Personality": "Devout, compassionate, and dedicated to his faith. He has an agenda of expanding the influence of the Catholic church in Japan.",
+    "About": "A thoughtful and sensitive Portuguese priest, he was brought to Japan as a boy. Alvito is a skilled translator and a uniquely empathetic presence in a harsh world.",
+    "Actor": "Tommy Bastow",
+    "IMDb": "https://www.imdb.com/name/nm2921012"
+  }
+]

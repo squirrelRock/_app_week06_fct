@@ -1,7 +1,7 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 20;
+  margin: 20;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +13,47 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.card-body.male {
+ background-color: rgb(227, 242, 247);
+}
+
+.card-body.female {
+  background-color: rgb(236, 222, 241);
+ }
+
+ .accordion-button.male {
+  background-color: rgb(190, 213, 221);
+  color: #000; 
+}
+
+.accordion-button.female {
+  background-color: rgb(236, 222, 241);
+  color: #000; 
+}
+
+
+.list-group-item.male {
+  background-color: rgb(190, 213, 221);
+}
+
+
+.list-group-item.female {
+  background-color: rgb(215, 192, 196);
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
+.box {
+  border-width: 1;
+  border-radius: 8px;
+  border-color: lightgrey;
+  background-color: antiquewhite;
+  padding: 30px;
+  
+  font-size: .7em;
 }
