@@ -27,7 +27,7 @@ export default function Home({ allData }) {
         <h1>Main Characters</h1>
         <div className="list-group">
           {allData.map(({ id, Character, gender }) => {
-            // Determine gender class
+            
             const genderClass = gender === 1 ? 'male' : 'female';
             
             return (

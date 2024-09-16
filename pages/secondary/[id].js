@@ -3,8 +3,7 @@ import { useState } from 'react';
 import Layout from '../../components/Layout';
 import { getAllIdsSecond, getDataSecond } from '../../lib/datalist';
 
-// define a getStaticProps() function to have next.js retrieve data to use for the dynamic page
-// - this name is defined by next.js
+// - getStaticProps() function is defined by next.js to retrieve data to use for the dynamic page
 export async function getStaticProps( { params } ) {
   const itemData = await getDataSecond(params.id);
   return {
@@ -14,8 +13,7 @@ export async function getStaticProps( { params } ) {
   };
 }
 
-// define a getStaticPaths() function to tell next.js all valid URLs: 1,2,3,4 
-// - this name is defined by next.js
+// - getStaticPaths() function  is defined by next.js, tells next.js all valid URLs: 1,2,3 etc.
 export async function getStaticPaths() {
   const paths = getAllIdsSecond();
   return {
@@ -25,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 
-
+import Link from 'next/link';
 
 export default function Card({ itemData }) {
   const [showAbout, setShowAbout] = useState(false);
@@ -59,7 +57,9 @@ export default function Card({ itemData }) {
     <u>IMDb</u>
   </a>
 </h6>
-
+<Link href="/secondary" className="btn btn-secondary small mt-2">
+        Back
+      </Link>
 
         </div>
       </article>

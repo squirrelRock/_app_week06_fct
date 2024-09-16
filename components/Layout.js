@@ -2,35 +2,34 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Layout({ children}) {
 
-  const router = useRouter();
-
-  const isHomePage = router.pathname === '/';
+  export default function Layout({ children }) {
+    const router = useRouter();
+    const { pathname } = router;
+  
+    // Determine if on the home page or secondary page
+    const isMain = pathname === '/';
+    const isSecondary = pathname === '/secondary';
 
   return (
     <>
       <Head>
-        <title>Shōgun - Main Characters</title>
+        <title>Shōgun</title>
       </Head>
       <header>
         <nav className="navbar navbar-light p-3" style={{ backgroundColor: '#e3f2fd' }}>
-
-        <h1><em>Shōgun</em></h1>
-
+          <h1><em>Shōgun</em></h1>
           <ul className='navbar-nav'>
-          {isHomePage ? (
-            <Link href="/secondary" className="btn btn-secondary btn-sm">
-              Next Page →
-            </Link>
-          ) : (
-            <button className="btn btn-secondary btn-sm" onClick={() => router.back()}>
-              ← Go Back
-            </button>
-          )}
+            <span>
+              <Link href="/" className={`btn ${isMain ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
+                Main
+              </Link>
+              <Link href="/secondary" className={`btn ${isSecondary ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
+                Supporting
+              </Link>
+            </span>
           </ul>
         </nav>
-
       </header>
 
       <main>

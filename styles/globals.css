@@ -20,7 +20,7 @@ a {
 }
 
 .card-body.female {
-  background-color: rgb(236, 222, 241);
+  background-color: antiquewhite;
  }
 
  .accordion-button.male {
@@ -35,12 +35,19 @@ a {
 
 
 .list-group-item.male {
-  background-color: rgb(190, 213, 221);
+  background-color: rgb(219, 238, 245);
 }
 
+.list-group-item.male:hover {
+  background-color: rgb(199, 218, 225);
+}
 
 .list-group-item.female {
-  background-color: rgb(215, 192, 196);
+  background-color: rgb(249, 234, 234);
+}
+
+.list-group-item.female:hover {
+  background-color: rgb(229, 214, 214);
 }
 
 
