@@ -15,7 +15,7 @@ export async function getStaticProps() {
 export default function Secondary({ allDataSecond }) {
   return (
     <Layout>
-      <h1>Supporting Characters from Shogun</h1>
+      <h1>Supporting Characters from Shōgun</h1>
       <div className="list-group">
         {allDataSecond.map(({ id, Character, gender }) => {
           const genderClass = gender === 1 ? 'male' : 'female';
