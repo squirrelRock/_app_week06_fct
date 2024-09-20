@@ -26,7 +26,7 @@ export default function Home({ allDataMain }) {
       <hr/>
       <h2>Main Characters</h2>
       <div className="list-group">
-        {allDataMain.map(({ id, Character, gender }) => {
+        {allDataMain && allDataMain.map(({ id, Character, gender }) => {
           const genderClass = gender === 1 ? 'male' : 'female';
           return (
             <Link key={id} href={`/main/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>

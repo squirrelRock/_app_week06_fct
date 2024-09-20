@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { getAllIdsMain, getDataMain } from '../../lib/datalist';
