@@ -12,10 +12,11 @@ export async function getStaticProps() {
     };
 }
 
-export default function Secondary({ allDataSecond }) {
+export default function Clans({ allDataClans }) {
   return (
     <Layout>
-      <h1>Supporting Characters from Shōgun</h1>
+      <h1>Family Connections through Blood and Bonded Relationships</h1>
+      <p>In Japan, a man of power could have many wives and consorts. A son born of a consort could still be heir to his fathers title.</p>
       <div className="list-group">
         {allDataSecond && allDataSecond.map(({ id, Character, gender }) => {
           const genderClass = gender === 1 ? 'male' : 'female';

@@ -42,7 +42,7 @@ import { useRouter } from 'next/router';
 
       <footer>
         <div className='container p-2 small '>
-          <p>Shōgun is a 10-part telvision series produced by FX on Hulu, released 2024.</p>
+          <p>Shōgun is a 10-part television series produced by FX on Hulu, released 2024.</p>
         </div>
       </footer>
     </>
