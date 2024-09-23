@@ -15,13 +15,13 @@ jest.mock('next/router', () => ({
     }),
   }));
 
-  
+
  
 it('should have Shōgun text', () => {
 
     render(<Secondary />)
 
-    const test2 = screen.getByText('Shōgun')
+    const test2 =  screen.getByText('Shōgun')
 
     expect(test2).toBeInTheDocument()
 })
