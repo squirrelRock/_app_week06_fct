@@ -8,9 +8,10 @@ import { useRouter } from 'next/router';
     const router = useRouter();
     const { pathname } = router;
   
-    // Determine if on the home page or secondary page
+    //  home page or secondary page?
     const isMain = pathname === '/';
     const isSecondary = pathname === '/secondary';
+    const isClan = pathname === '/clans';
 
   return (
     <>
@@ -27,6 +28,9 @@ import { useRouter } from 'next/router';
               </Link>
               <Link href="/secondary" className={`btn ${isSecondary ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
                 Supporting
+              </Link>
+              <Link href="/clans" className={`btn ${isClan ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
+                Clans
               </Link>
             </span>
           </ul>

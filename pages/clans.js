@@ -1,34 +1,46 @@
-// pages/secondary.js
+// pages/clans.js
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import { getListSecond } from '../lib/datalist';
+import FamilyGroupCard from '../components/FamilyGroupCard'; 
+import { combinedData, groupByFamily } from '../lib/datalist';
 
 export async function getStaticProps() {
-    // Data from shogun2nd.json
-    const allDataSecond = getListSecond(); 
-    return {
-      props: { allDataSecond }
-    };
+  const dataCombined = combinedData();
+  const familyGroups = groupByFamily(dataCombined);
+  return {
+    props: { familyGroups }
+  };
 }
 
-export default function Clans({ allDataClans }) {
+export default function Clans({ familyGroups }) {
   return (
     <Layout>
-      <h1>Family Connections through Blood and Bonded Relationships</h1>
-      <p>In Japan, a man of power could have many wives and consorts. A son born of a consort could still be heir to his fathers title.</p>
-      <div className="list-group">
-        {allDataSecond && allDataSecond.map(({ id, Character, gender }) => {
-          const genderClass = gender === 1 ? 'male' : 'female';
+      <h1>Family Connections</h1>
+      <h4>(Blood Clan and Bonded Relationships)</h4>
+      <p>
+        In Japan in the 1600&apos;s, a man of power could have many wives and consorts. A son born of a consort could still be heir to his father&apos;s title.
+      </p>
+
+     
+      <div className="row">
+        {Object.keys(familyGroups).map(groupId => {
+          const group = familyGroups[groupId];
+          const { headOfClan, members } = group;
+
           return (
-            <Link key={id} href={`/secondary/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>
-              {Character}
-            </Link>
+            <div key={groupId} className="col-md-6">
+              <FamilyGroupCard
+                groupId={groupId}
+                headOfClan={headOfClan}
+                members={members}
+              />
+            </div>
           );
         })}
       </div>
-      
-      {/* Link back to the Main Page */}
+
+     
       <Link href="/" className="btn btn-secondary mt-3">
         Back to Main Characters
       </Link>

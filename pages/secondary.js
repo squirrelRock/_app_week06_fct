@@ -27,7 +27,7 @@ export default function Secondary({ allDataSecond }) {
         })}
       </div>
       
-      {/* Link back to the Main Page */}
+      
       <Link href="/" className="btn btn-secondary mt-3">
         Back to Main Characters
       </Link>
