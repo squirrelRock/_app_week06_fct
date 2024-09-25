@@ -6,19 +6,21 @@
     },
 
     { "id" : 2,
-      "headOfClan": 7,
-      "family": [18]
-    },
+    "headOfClan": 17,
+    "family": [4,5,9]
+  },
 
     { "id" : 3,
+      "headOfClan": 19,
+      "family": [7,18]
+    },
+
+    { "id" : 4,
       "headOfClan": 11,
       "family": [16]
     },
 
-    { "id" : 4,
-      "headOfClan": 17,
-      "family": [4,5,9]
-    },
+  
 
     { "id": 5,
       "headOfClan": null,

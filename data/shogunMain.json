@@ -24,7 +24,7 @@
   {
     "id": 5,
     "Character": "Lady Mariko - 2024 Emmy for Lead Actress",
-    "Role": "Lead Female role - Toranaga’s loyal vassal as translator for the Anjin",
+    "Role": "Toranaga’s loyal vassal as translator for the Anjin",
     "Gender": 2,
     "Family": [4,9,17] ,
     "Personality": "A devout Christian, Mariko is deeply faithful yet also wants to avenge her family. Loyal to Toranaga.",
@@ -35,7 +35,7 @@
   {
     "id": 7,
     "Character": "Lady Ochiba",
-    "Role": "The Mother of the Heir - Consort to the Late Taiko",
+    "Role": "The mother of the Heir, consort to the late Taikō",
     "Gender": 2,
     "Family": [18] ,
     "Personality": "Ruthless and calculating.",
@@ -102,5 +102,16 @@
     "About": "Toranaga's second in command, Toda Hiromatsu is a hardened general who has, at his age, truly seen it all. Hiromatsu is Toranaga's conscience, his most experienced advisor, and, above all, his friend.",
     "Actor": "Tokuma Nishioka",
     "IMDb": "https://www.imdb.com/name/nm0632804"
+  },
+  {
+    "id": 19,
+    "Character": "Lady Iyo",
+    "Role": "Wife of the late Taikō",
+    "Gender": 2,
+    "Family": [7,18] ,
+    "Personality": "Graceful and dignified",
+    "About": "After her husband’s death, she became a Buddhist nun known as Daiyoin. She is loyal to Toranaga,  ",
+    "Actor": "Ako",
+    "IMDb": "https://www.imdb.com/name/nm0015488"
   }
 ]

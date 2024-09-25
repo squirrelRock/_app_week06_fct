@@ -37,9 +37,12 @@ export default function Home({ allDataMain }) {
       </div>
 
       {/* Secondary Characters */}
-      <h4 className="mt-3">More Characters</h4>
-      <Link href="/secondary" className="btn btn-secondary ">
+      <h4 className="mt-3">More . . .</h4>
+      <Link href="/secondary" className="btn btn-secondary btn-sm small">
         View Supporting Characters
+      </Link>
+      <Link href="/clans" className="btn btn-secondary btn-sm small ms-2">
+        View Clans
       </Link>
     </Layout>
   );

@@ -39,7 +39,7 @@ export default function Card({ itemData }) {
           <p className="card-text small">Personality: {itemData.Personality}</p>
           
           <button
-            className="btn btn-secondary btn-sm  mt-1 w-100" 
+            className="btn btn-secondary btn-sm  mt-1 w-50" 
             onClick={() => setShowAbout(!showAbout)}
           >
             {showAbout ? 'Close' : 'Description'}
@@ -59,7 +59,7 @@ export default function Card({ itemData }) {
     <u>IMDb</u>
   </a>
 </h6>
-<Link href="/" className="btn btn-secondary small mt-2">
+<Link href="/" className="btn btn-secondary btn-sm small mt-2">
         Back
       </Link>
 

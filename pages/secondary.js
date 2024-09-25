@@ -28,8 +28,11 @@ export default function Secondary({ allDataSecond }) {
       </div>
       
       
-      <Link href="/" className="btn btn-secondary mt-3">
+      <Link href="/" className="btn btn-secondary btn-sm small mt-3">
         Back to Main Characters
+      </Link>
+      <Link href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-3">
+        View Clans
       </Link>
     </Layout>
   );
