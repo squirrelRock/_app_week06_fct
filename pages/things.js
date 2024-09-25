@@ -14,9 +14,9 @@ export async function getStaticProps() {
 export default function Things({ allCharData }) {
   return (
     <Layout>
-      <h1>Shōgun Characters - All </h1>
-      <h4>Favored Personal Possessions</h4>
-      <div className="list-group">
+      <h1 className="text-center">-    Shōgun Characters   -  </h1>
+      <h4 className="text-center mt-2">(and their favored personal possessions)</h4>
+      <div className="list-group mt-4">
         {allCharData && allCharData.map(({ id, Character, Gender }) => {
           console.log(Gender); // is gender value correct?
           const genderClass = Gender === 1 ? 'male' : 'female';

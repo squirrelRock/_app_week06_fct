@@ -9,7 +9,8 @@ import { useRouter } from 'next/router';
     const { pathname } = router;
   
     //  which page?
-    const isMain = pathname === '/';
+    const isHome = pathname === '/';
+    const isMain = pathname === '/main';
     const isSecondary = pathname === '/secondary';
     const isClan = pathname === '/clans';
     const isFavored = pathname === '/things';
@@ -24,18 +25,18 @@ import { useRouter } from 'next/router';
           <h1><em>Shōgun</em></h1>
           <ul className='navbar-nav'>
             <span>
-              <Link href="/" className={`btn btn-sm small ${isMain ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
-                Main
+            <Link href="/" className={`btn btn-sm small ${isHome ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
+                Home
               </Link>
-              <Link href="/secondary" className={`btn btn-sm small ${isSecondary ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
-                Supporting
-              </Link>
-              <Link href="/clans" className={`btn btn-sm small ${isClan ? 'btn-warning active' : 'btn-danger'} mx-1`}>
+             
+            <Link href="/clans" className={`btn btn-sm small ${isClan ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
                 Clans
               </Link>
-              <Link href="/things" className={`btn btn-sm small ${isFavored ? 'btn-warning active' : 'btn-danger'} mx-1`}>
-        Favored Objects
+              <Link href="/things" className={`btn btn-sm small ${isFavored ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
+        All Characters
       </Link>
+
+         
             </span>
           </ul>
         </nav>
