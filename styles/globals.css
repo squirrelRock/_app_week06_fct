@@ -25,16 +25,6 @@ a {
   background-color: antiquewhite;
  }
 
- .accordion-button.male {
-  background-color: rgb(190, 213, 221);
-  color: #000; 
-}
-
-.accordion-button.female {
-  background-color: rgb(236, 222, 241);
-  color: #00f; 
-}
-
 
 .list-group-item.male {
   background-color: rgb(219, 238, 245);
@@ -53,16 +43,12 @@ a {
 }
 
 
-.breadcrumb-item + .breadcrumb-item::before {
-  content: '>';
-}
-
 .box {
   border-width: 1;
   border-radius: 8px;
   border-color: rgb(39, 38, 50);
   background-color: antiquewhite;
-  padding: 30px;
+  padding: 20px;
   
   font-size: .7em;
 }
@@ -71,3 +57,12 @@ a {
   text-decoration: underline;
 }
 
+.character-title {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #fff; 
+  color: #333; 
+  font-weight: bold;
+}            

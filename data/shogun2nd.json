@@ -4,10 +4,10 @@
   {
     "id": 4,
     "Character": "Buntaro",
-    "Role": "Toda Hirokatsu, the fiercest warrior in the land and Lady Mariko's husband",
+    "Role": "Toda Hirokatsu, fiercest samurai and Lady Mariko's husband",
     "Gender": 1,
-    "Family": [5, 17, 9] ,
-    "Personality": "Loyal and honorable, he is stoic, disciplined, and unwavering in his commitment to Lord Toranaga.",
+   
+    "Personality": "Loyal and disciplined, unwavering in his commitment to Lord Toranaga, but a jealous husband.",
     "About": "A brooding, stoic samurai, he is ruthlessly loyal to his lord, Toranaga, and his father, Hiromatsu. He suffers a single weakness: his jealous possession of his wife, Mariko. Buntaro is a samurai bound by duty and tradition.",
     "Actor": "Shinnosuke Abe",
     "IMDb": "https://www.imdb.com/name/nm1912546"
@@ -17,7 +17,7 @@
     "Character": "Yoshi Nagakado",
     "Role": "Toranaga's son",
     "Gender": 1,
-    "Family": [3, 14] ,
+   
     "Personality": "Bold, impatient, passionate and somewhat naive.",
     "About": "The bold, brash son of Toranaga, Yoshi has a blinding adoration for his father and a strong desire to prove himself. Often acting before he thinks, Yoshi has more heart than common sense.",
     "Actor": "Yuki Kura",
@@ -30,7 +30,7 @@
     "Role": "Headman of Ajiro (and Toranaga's samurai spy)",
     "Personality": "Quiet, humble and devoted.",
     "Gender": 1,
-    "Family": [null] ,
+   
     "About": "The well-respected headman of Ajiro Village, Muraji is a devout Christian, a hardworking fisherman, and a spy. With a mysterious and well-guarded past, Muraji is fiercely loyal to his lord and his village.",
     "Actor": "Yasunari Takeshima",
     "IMDb": "https://www.imdb.com/name/nm3437812"
@@ -40,7 +40,7 @@
     "id": 2,
     "Character": "Kiku",
     "Gender": 2,
-    "Family": [16] ,
+   
     "Role": "The most revered and accomplished courtesan.",
     "Personality": "Kiku is a graceful, perceptive, and ambitious woman.",
     "About": "The most deft and renowned courtesan in Izu, Kiku is skilled in ways only known to the select few men who can afford her. While she shares a special relationship with Omi, she is perceptive and ambitious and brings an elevated artistry to all her work.",
@@ -54,7 +54,7 @@
     "Character": "Vasco Rodrigues- 2024 Emmy for best guest actor",
     "Role": "Spanish pilot for the Portuguese Christian traders",
     "Gender": 1,
-    "Family": [null] ,
+ 
     "Personality": "Rodrigues has a funny, unpredictable personality. Loyal mainly to himself, he likes to banter and enjoy life.",
     "About": "Rodrigues was a Spanish pilot in the service of the Portuguese in Japan in 1600. Vasco plays a crucial role as a bridge between the Anjin and the Japanese.",
     "Actor": "Nestor Carbonell",
@@ -65,7 +65,7 @@
     "Character": "Yoshii Nagakado",
     "Role": "Toranaga's son",
     "Gender": 1,
-    "Family": [3, 14] ,
+   
     "Personality": "Bold, impatient, passionate and somewhat naive.",
     "About": "Toranaga's youngest son, who is brash and often acts before thinking. He has a strong desire to prove himself and adores his father. Nagakado dies tragically trying to defend his father, but slips on a rock. Often acting before he thinks, Yoshii has more heart than common sense.",
     "Actor": "Yuki Kura",
@@ -73,10 +73,10 @@
   },
   {
     "id": 14,
-    "Character": "Lady Kiri no Kata",
+    "Character": "Lady Kiri-no-Kata",
     "Role": "Toranaga's wife",
     "Gender": 2,
-    "Family": [3, 12] ,
+   
     "Personality": "A wise, loyal, intelligent and deft woman.",
     "About": "Kiri is a steadfast partner to the great warlord. She is an affectionate, yet vigilant, mother hen to his large family. Though she laughs easily, she is fiercely protective of the lord of her family.",
     "Actor": "Yoriko Dōguchi",
@@ -87,7 +87,7 @@
     "Character": "Kashigi Omi",
     "Role": "Young lord of Ajiro, Yabushige's nephew",
     "Gender": 1,
-    "Family": [11] ,
+  
     "Personality": "Smart and eager politically. Also, in love with Kiku",
     "About": "Omi is keenly analytical and lives by a thoughtful calculus far beyond his years. Unlike Toranaga's son, whose birthright should help him succeed, Omi must be more cautious and clever. His calculations attract the attention of powerful people, and he soon finds himself embroiled in the fight to control Japan. ",
     "Actor": "Hiroto Kanai",
@@ -98,11 +98,25 @@
     "Character": "Nakamura Yaechiyo",
     "Role": "Child Heir to the Throne",
     "Gender": 1,
-    "Family": [7] ,
+    
     "Personality": "Kind and Inquisitive",
     "About": "Nakamura Yaechiyo is the heir of Taiko, who will rule Japan once he becomes of age. He lives in Osaka and is looked after by Daiyoin (his late father's wife) and his birth mother Lady Ochiba. ",
     "Actor": "Sen Mars",
     "IMDb": "https://www.imdb.com/name/nm13843120"
+  },
+  {
+    "id": 20,
+    "Character": "Lady Shizu",
+    "Role": "Toranaga's consort - she is pregnant with Toranaga's son and gives birth in the last episode. She is cared for by Toranaga's wife.",
+    "Gender": 2,
+    
+    "Personality": "Both demure and brave",
+    "About": "Lady Shizu plays a key role in helping Toranaga escape from Osaka castle. She and Lady Kiri-no-kata play a trick on Lord Ishido ",
+    "Actor": "Mako Fujimoto",
+    "IMDb": "https://www.imdb.com/name/nm12079954"
   }
   
+  
 ]
+
+

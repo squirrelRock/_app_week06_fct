@@ -16,9 +16,8 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
     <div className="card my-4">
       <div className="card-body">
         {headOfClan ? (
-          <>
-          
-            <h5 className="card-subtitle mb-2 text-muted">Head of Clan</h5>
+          <>          
+           <h5 className="card-subtitle mb-2 text-muted">Head of Clan</h5>
             <ul className="list-group mb-3">
               <li className={`list-group-item ${headGenderClass}`}>
                 <Link href={`/main/${headOfClan.id}`} className="underline-link">
@@ -26,39 +25,45 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
                 </Link>
               </li>
             </ul>
-            <h6 className="mt-3">Family</h6>
-            <ul className="list-group">
-              {members.length > 0 && (
-                members.map(member => {
-                  const genderClass = member.Gender === 1 ? 'male' : 'female';
-                  return (
-                    <li key={member.id} className={`list-group-item ${genderClass} ` }>
-                      <Link href={`/main/${member.id}`} className="text-decoration-none">
-                        {member.Character} - {member.Role}
-                      </Link>
-                    </li>
-                  );
-                })
-              ) }
-            </ul>
-          </>
-        ) : (
-          <>
-            {/* map the unrelated characters for the bullet list */}
+         <h6 className="mt-3">Family</h6>
+      <ul className="list-group">
+        {members.length > 0 && (
+          members.map(member => {
+           const genderClass = member.Gender === 1 ? 'male' : 'female';
+           // odd members use the Main list and even numbers use the Secondary list
+           const linkHref = (member.id % 2 !== 0) 
+             ? `/main/${member.id}` 
+             : `/secondary/${member.id}`;
+
+        return (
+                <li key={member.id} className={`list-group-item ${genderClass}`}>
+                <Link href={linkHref} className="text-decoration-none">
+                    {member.Character} - {member.Role}
+                </Link>
+                </li>
+               );
+             })
+           )}
+      </ul>
+    </>
+        ) 
+        : // mapping the unrelated characters for the bullet list
+        (
+          <>          
             <h5 className="card-subtitle mb-2 text-muted">Unrelated Characters</h5>
-           
-            <ul className="list-group p-3">
-            {members.length > 0 && (
-                    members.map(member => {
-                  
+              <ul className="list-group p-3">
+                 {members.length > 0 && (members.map(member => {
+                        const linkHref2 = (member.id % 2 !== 0) 
+                        ? `/main/${member.id}` 
+                        : `/secondary/${member.id}`;
                   return (
                     <li key={member.id} className={`list-item `}>
-                      <Link href={`/main/${member.id}`} className="underline-link">
+                      <Link href={linkHref2} className="underline-link">
                         {member.Character }
                       </Link>
                     </li>
-                  );
-                })
+                    );
+                 })
               ) }
             </ul>
           </>
