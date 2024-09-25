@@ -25,10 +25,7 @@ export async function getStaticPaths() {
 }
 
 
-
-
 export default function Card({ itemData }) {
-  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <Layout>

@@ -34,6 +34,9 @@ export default function Secondary({ allDataSecond }) {
       <Link href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-3">
         View Clans
       </Link>
+      <Link href="/things" className="btn btn-secondary btn-sm small ms-2 mt-3">
+        View Favorite Things
+      </Link>
     </Layout>
   );
 }

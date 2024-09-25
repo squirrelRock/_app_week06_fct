@@ -44,6 +44,9 @@ export default function Home({ allDataMain }) {
       <Link href="/clans" className="btn btn-secondary btn-sm small ms-2">
         View Clans
       </Link>
+      <Link href="/things" className="btn btn-secondary btn-sm small ms-2 ">
+        View Favorite Things
+      </Link>
     </Layout>
   );
 }

@@ -12,18 +12,7 @@
     "Actor": "Shinnosuke Abe",
     "IMDb": "https://www.imdb.com/name/nm1912546"
   },
-  {
-    "id": 6,
-    "Character": "Yoshi Nagakado",
-    "Role": "Toranaga's son",
-    "Gender": 1,
-   
-    "Personality": "Bold, impatient, passionate and somewhat naive.",
-    "About": "The bold, brash son of Toranaga, Yoshi has a blinding adoration for his father and a strong desire to prove himself. Often acting before he thinks, Yoshi has more heart than common sense.",
-    "Actor": "Yuki Kura",
-    "IMDb": "https://www.imdb.com/name/nm11403645"
-    
-  },
+ 
   {
     "id": 8,
     "Character": "Muraji",

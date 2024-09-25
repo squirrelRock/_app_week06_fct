@@ -1,0 +1,46 @@
+[
+   
+    { "id" : 1,
+      "owner": [3,4,6,12,13,17],
+      "thing": "sword"
+    },
+
+    { "id" : 2,
+    "owner": [3,5,9,7,20],
+    "thing": "fan"
+  },
+
+    { "id" : 3,
+      "owner": [4,12,16],
+      "thing": "helmet"
+    },
+
+    { "id" : 4,
+      "owner": [1,9],
+      "thing": "gun"
+    },
+  
+    { "id": 5,
+      "owner":[2,7,14,19],
+      "thing": "mirror"
+    },
+
+
+    { "id": 6,
+      "owner": [5,11,17],
+      "thing": "bo - fighting stick"
+    },
+
+    { "id": 7,
+      "owner": [5,15],
+      "thing": "rosary"
+    },
+
+    { "id": 8,
+    "owner": [3,8],
+    "thing": "falcon"
+  }
+
+
+
+]
