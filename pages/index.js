@@ -2,15 +2,15 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import { getListMain } from '../lib/datalist';
+// import { getListMain } from '../lib/datalist';
 
 // GET STATIC PROPS
-export async function getStaticProps() {
-    const allDataMain = getListMain(); // Data from shogunMain.json
-    return {
-      props: { allDataMain }
-    };
-}
+// export async function getStaticProps() {
+//     const allDataMain = getListMain(); // Data from shogunMain.json
+//     return {
+//       props: { allDataMain }
+//     };
+// }
 
 // HOME COMPONENT
 export default function Home({ allDataMain }) {

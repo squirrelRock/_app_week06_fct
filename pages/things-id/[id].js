@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
-import { getAllCharIds, getCharData } from '../../lib/thingList';
+import { getAllCharacterIds, getCharacterData } from '../../lib/thingList';
 
 
 // - getStaticProps() function is defined by next.js to retrieve data to use for the dynamic page
 export async function getStaticProps( { params } ) {
-  const itemData = await getCharData(params.id);
+  const itemData = await getCharacterData(params.id);
   return {
     props: {
       itemData
@@ -17,7 +17,7 @@ export async function getStaticProps( { params } ) {
 
 // - getStaticPaths() function  is defined by next.js, tells next.js all valid URLs: 1,2,3 etc.
 export async function getStaticPaths() {
-  const paths = getAllCharIds();
+  const paths = await getAllCharacterIds();
   return {
     paths,
     fallback: false

@@ -5,20 +5,20 @@ import { getSortedList } from '../lib/thingList';
 
 export async function getStaticProps() {
     
-    const allCharData = getSortedList();  
+    const allCharacterData = await getSortedList();  
     return {
-      props: { allCharData }
+      props: { allCharacterData }
     };
 }
 
-export default function Things({ allCharData }) {
+export default function Things({ allCharacterData }) {
   return (
     <Layout>
       <h1 className="text-center">-    Shōgun Characters   -  </h1>
       <h4 className="text-center mt-2">(and their favored personal possessions)</h4>
       <div className="list-group mt-4">
-        {allCharData && allCharData.map(({ id, Character, Gender }) => {
-          console.log(Gender); // is gender value correct?
+        {allCharacterData && allCharacterData.map(({ id, Character, Gender }) => {
+          console.log(Gender); // check gender
           const genderClass = Gender === 1 ? 'male' : 'female';
           return (
             <Link key={id} href={`/things-id/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>

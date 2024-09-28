@@ -3,6 +3,9 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function FamilyGroupCard({ groupId, headOfClan, members }) {
+  console.log("Rendering FamilyGroupCard for Group ID:", groupId);
+  console.log("Head of Clan:", headOfClan);
+  console.log("Members:", members);
  // establish gender for styling
   const headGenderClass = headOfClan
     ? headOfClan.Gender === 1

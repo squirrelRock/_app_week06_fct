@@ -6,14 +6,18 @@ import FamilyGroupCard from '../components/FamilyGroupCard';
 import { combinedData, groupByFamily } from '../lib/datalist';
 
 export async function getStaticProps() {
-  const dataCombined = combinedData();
-  const familyGroups = groupByFamily(dataCombined);
+  const dataCombined = await combinedData();
+  const familyGroups = await groupByFamily(dataCombined);
+  
+  console.log("Final Family Groups:", JSON.stringify(familyGroups, null, 2));
+  
   return {
     props: { familyGroups }
   };
 }
 
 export default function Clans({ familyGroups }) {
+  console.log("Family Groups Passed to Clans Component:", familyGroups)
   return (
     <Layout>
       <h1>Family Connections</h1>
