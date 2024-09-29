@@ -15,7 +15,7 @@ export async function getStaticProps( { params } ) {
 
 // - getStaticPaths() function  is defined by next.js, tells next.js all valid URLs: 1,2,3 etc.
 export async function getStaticPaths() {
-  const paths = getAllIdsSecond();
+  const paths = await getAllIdsSecond();
   return {
     paths,
     fallback: false

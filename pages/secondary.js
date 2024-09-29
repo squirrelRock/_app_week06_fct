@@ -6,7 +6,7 @@ import { getListSecond } from '../lib/datalist';
 
 export async function getStaticProps() {
     // Data from shogun2nd.json
-    const allDataSecond = getListSecond(); 
+    const allDataSecond = await getListSecond(); 
     return {
       props: { allDataSecond }
     };
