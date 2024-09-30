@@ -34,7 +34,7 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
           members.map(member => {
            const genderClass = member.Gender === 1 ? 'male' : 'female';
            // odd members use the Main list and even numbers use the Secondary list
-           const linkHref = `/things/${member.id}`;
+           const linkHref = `/things-id/${member.id}`;
             
 
         return (

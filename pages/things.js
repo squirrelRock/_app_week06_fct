@@ -28,14 +28,14 @@ export default function Things({ allCharacterData }) {
         })}
       </div>
       
-      <Link href="/" className="btn btn-secondary btn-sm small mt-3">
-        Back to Main Characters
+      <Link href="/main" className="btn btn-secondary btn-sm small mt-3">
+        Main Characters
       </Link>
       <Link href="/secondary" className="btn btn-secondary btn-sm small  ms-2 mt-3">
-        View Supporting Characters
+        Supporting Characters
       </Link>
       <Link href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-3">
-        View Clans
+        Clans
       </Link>
     </Layout>
   );
