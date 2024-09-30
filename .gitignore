@@ -131,3 +131,5 @@ dist
 
 # Ignore Firebase service account folder
 server-scripts/*.json
+
+.DS_Store

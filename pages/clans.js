@@ -45,7 +45,7 @@ export default function Clans({ familyGroups }) {
       </div>
 
      
-      <Link href="/" className="btn btn-secondary btn-sm small mt-3">
+      <Link href="/main" className="btn btn-secondary btn-sm small mt-3">
         Main Characters
       </Link>
       <Link href="/secondary" className="btn btn-secondary btn-sm small  ms-2 mt-3">

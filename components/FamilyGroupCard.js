@@ -34,9 +34,8 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
           members.map(member => {
            const genderClass = member.Gender === 1 ? 'male' : 'female';
            // odd members use the Main list and even numbers use the Secondary list
-           const linkHref = (member.id % 2 !== 0) 
-             ? `/main/${member.id}` 
-             : `/secondary/${member.id}`;
+           const linkHref = `/things/${member.id}`;
+            
 
         return (
                 <li key={member.id} className={`list-group-item ${genderClass}`}>
@@ -56,9 +55,7 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
             <h5 className="card-subtitle mb-2 text-muted">Unrelated Characters</h5>
               <ul className="list-group p-3">
                  {members.length > 0 && (members.map(member => {
-                        const linkHref2 = (member.id % 2 !== 0) 
-                        ? `/main/${member.id}` 
-                        : `/secondary/${member.id}`;
+                          const linkHref2 = `/things/${member.id}`;
                   return (
                     <li key={member.id} className={`list-item `}>
                       <Link href={linkHref2} className="underline-link">

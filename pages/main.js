@@ -24,9 +24,9 @@ export default function Main({ allDataMain }) {
         {allDataMain && allDataMain.map(({ id, Character, gender }) => {
           const genderClass = gender === 1 ? 'male' : 'female';
           return (
-            <Link key={id} href={`/main/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>
-              {Character}
-            </Link>
+            <Link key={id} href={`/things-id/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>
+            {Character}
+          </Link>
           );
         })}
       </div>
@@ -34,13 +34,13 @@ export default function Main({ allDataMain }) {
       {/* Secondary Characters */}
       <h4 className="mt-3">More . . .</h4>
       <Link href="/secondary" className="btn btn-secondary btn-sm small">
-        View Supporting Characters
+        Supporting Characters
       </Link>
       <Link href="/clans" className="btn btn-secondary btn-sm small ms-2">
-        View Clans
+        Clans
       </Link>
       <Link href="/things" className="btn btn-secondary btn-sm small ms-2 ">
-        View Favorite Things
+        All Characters
       </Link>
     </Layout>
   );
