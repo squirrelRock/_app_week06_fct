@@ -21,8 +21,8 @@ import { useRouter } from 'next/router';
         <title>Shōgun</title>
       </Head>
       <header>
-        <nav className="navbar navbar-light p-3" style={{ backgroundColor: '#e3f2fd' }}>
-          <h1><em>Shōgun</em></h1>
+        <nav className="navbar navbar-light p-3" style={{ backgroundColor: 'black' }}>
+          <h1 style={{ color: 'whitesmoke' }}><em>Shōgun</em></h1>
           <ul className='navbar-nav'>
             <span>
             <Link href="/" className={`btn btn-sm small ${isHome ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
@@ -50,7 +50,7 @@ import { useRouter } from 'next/router';
       </main>
 
       <footer>
-        <div className='container p-2 small '>
+        <div className='container p-4 mt-4 text-center '>
           <p>Shōgun is a 10-part television series produced by FX on Hulu, released 2024.</p>
         </div>
       </footer>

@@ -34,14 +34,14 @@ export default function Card({ itemData }) {
     <Layout>
       <article className="card col-9">
         <div className={`card-body ${itemData.Gender === 1 ? 'male' : 'female'}`}>
-          <h5 className="card-title character-title">Character: {itemData.Character}</h5>
-          <p className="card-text small px-2 pt-2"><strong>Role:</strong> {itemData.Role}</p>
-          <p className="card-text small px-2"><strong>Personality:</strong> {itemData.Personality}</p>
+          <h5 className="card-title character-title">Character: <span className="white">{'\u00A0\u00A0'}{itemData.Character}</span></h5>
+          <h6 className="card-text small px-2 pt-2 red"><strong>Role:</strong> <span className="white">{'\u00A0\u00A0'}{itemData.Role}</span></h6>
+          <h6 className="card-text small px-2 red"><strong>Personality:</strong> <span className="white">{'\u00A0\u00A0'}{itemData.Personality}</span></h6>
           
          
-            <h6 className="card-text mt-2 small px-2"><strong>Description:</strong> {itemData.About}
-            </h6> 
-            <h6 className="card-text mt-2 small px-2"><strong>Favorite Personal Objects</strong></h6>
+            <h6 className="card-text mt-2 small px-2 red"><strong>Description:</strong> <span className="white">{'\u00A0\u00A0'}{itemData.About}
+            </span></h6> 
+            <h6 className="card-text mt-2 small px-2 pt-3 red"><strong>Favorite Personal Objects</strong></h6>
           <ol>
             {itemData.things && itemData.things.map(
                 ({id, thing}) => (
@@ -55,7 +55,7 @@ export default function Card({ itemData }) {
           
           <hr/>
           <h6 className="card-subtitle mb-2 text-body-secondary d-flex justify-content-between align-items-center">
-  <span>
+  <span className='red underline-link'>
     Actor: {'\u00A0'}
     <a href={itemData.IMDb} target="_blank" rel="noopener noreferrer" className="card-link">
       {itemData.Actor}
@@ -65,13 +65,17 @@ export default function Card({ itemData }) {
     <u>IMDb</u>
   </a>
 </h6>
-<Link href="/things" className="btn btn-secondary btn-sm small mt-2">
-        Back
-      </Link>
+
 
 
         </div>
       </article>
+      <Link href="/things" className="btn btn-secondary btn-sm small mt-2">
+        All Characters
+      </Link>
+      <Link  href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-2">
+        Clans
+      </Link>
     </Layout>
   );
 }

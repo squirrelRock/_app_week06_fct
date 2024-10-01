@@ -52,7 +52,7 @@ export default function Clans({ familyGroups }) {
         Supporting Characters
       </Link>
       <Link href="/things" className="btn btn-secondary btn-sm small ms-2 mt-3">
-        Favored Objects
+        All Character List
       </Link>
     </Layout>
   );
