@@ -32,7 +32,7 @@ export default function Card({ itemData }) {
 
   return (
     <Layout>
-      <article className="card col-9">
+      <article className="card col-9 mx-auto ">
         <div className={`card-body ${itemData.Gender === 1 ? 'male' : 'female'}`}>
           <h5 className="card-title character-title">Character: <span className="white">{'\u00A0\u00A0'}{itemData.Character}</span></h5>
           <h6 className="card-text small px-2 pt-2 red"><strong>Role:</strong> <span className="white">{'\u00A0\u00A0'}{itemData.Role}</span></h6>
@@ -67,15 +67,9 @@ export default function Card({ itemData }) {
 </h6>
 
 
-
         </div>
       </article>
-      <Link href="/things" className="btn btn-secondary btn-sm small mt-2">
-        All Characters
-      </Link>
-      <Link  href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-2">
-        Clans
-      </Link>
+     
     </Layout>
   );
 }

@@ -15,11 +15,18 @@ export default function Things({ allCharacterData }) {
   return (
     <Layout>
       <h1 className="text-center">-    Shōgun Characters   -  </h1>
-      <h4 className="text-center mt-2">(and their favored personal possessions)</h4>
+      <h3 className="text-center mt-2">(and their favored personal possessions)</h3>
+      <hr/>
+      <h4 className="text-center mt-5">Main Characters</h4>
+     <div className='container spacing'>
       <div className="list-group mt-4">
-        {allCharacterData && allCharacterData.map(({ id, Character, Gender }) => {
+        {allCharacterData && allCharacterData
+          .filter(item => parseInt(item.id) % 2 !== 0) // main chars have odd ids
+          .map(({ id, Character, Gender }) => {
           
           const genderClass = Gender === 1 ? 'male' : 'female';
+          
+        
           return (
             <Link key={id} href={`/things-id/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>
               {Character}
@@ -27,12 +34,27 @@ export default function Things({ allCharacterData }) {
           );
         })}
       </div>
+      </div>
+
+      <h4 className="text-center mt-5">Supporting Characters</h4>
+      <div className='container spacing'>
+      <div className="list-group mt-4">
+        {allCharacterData && allCharacterData
+          .filter(item => parseInt(item.id) % 2 === 0) //supporting characters have even ids
+          .map(({ id, Character, Gender }) => {
+            const genderClass = Gender === 1 ? 'male' : 'female';
+            return (
+              <Link key={id} href={`/things-id/${id}`} className={`list-group-item list-group-item-action ${genderClass}`}>
+                {Character}
+              </Link>
+            );
+          })}
+      </div>
+      </div>
       
-      <Link href="/main" className="btn btn-secondary btn-sm small mt-3">
-        Main Characters
-      </Link>
-      <Link href="/secondary" className="btn btn-secondary btn-sm small  ms-2 mt-3">
-        Supporting Characters
+   
+      <Link href="/" className="btn btn-secondary btn-sm small  ms-2 mt-3">
+        Home
       </Link>
       <Link href="/clans" className="btn btn-secondary btn-sm small ms-2 mt-3">
         Clans

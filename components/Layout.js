@@ -8,10 +8,8 @@ import { useRouter } from 'next/router';
     const router = useRouter();
     const { pathname } = router;
   
-    //  which page?
+    //  page check
     const isHome = pathname === '/';
-    const isMain = pathname === '/main';
-    const isSecondary = pathname === '/secondary';
     const isClan = pathname === '/clans';
     const isFavored = pathname === '/things';
 
@@ -33,7 +31,7 @@ import { useRouter } from 'next/router';
                 Clans
               </Link>
               <Link href="/things" className={`btn btn-sm small ${isFavored ? 'btn-warning active' : 'btn-secondary'} mx-1`}>
-        All Characters
+       Character Lists
       </Link>
 
          

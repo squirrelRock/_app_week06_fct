@@ -21,17 +21,12 @@ export default function Home({ allDataMain }) {
 <div className="d-flex flex-column align-items-center mb-5">
 
   <Link href="/things" className="btn btn-secondary btn-sm small mt-2 text-center">
-  Shōgun Characters - Full List
+  Character Lists
   </Link>
   <Link href="/clans" className="btn btn-secondary btn-sm small mt-2 text-center">
     Clans and Bonded Relationships
   </Link>
-  <Link href="/main" className="btn btn-secondary btn-sm small mt-2 text-center">
-    Main Character List
-  </Link>
-  <Link href="/secondary" className="btn btn-secondary btn-sm small mt-2 text-center">
-    Supporting Characters
-  </Link>
+ 
 </div>
 <hr/>
 <h6 className='mt-4'><strong>Sept 16, 2024</strong></h6>
