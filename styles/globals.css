@@ -64,7 +64,7 @@ a {
 
 .card {
 
-  color:whitesmoke;
+  color: rgb(238, 238, 237);
 }
 
 .blockquote {
@@ -128,12 +128,25 @@ a {
 
 div.container.spacing {
   width: 100%;
-  margin: o auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
   div.container.spacing {
-    width: 66%; 
+    width: 80%; 
     margin: 0 auto; 
+  }
+}
+
+.card {
+  width: 100%;
+  margin: 10px auto;
+}
+
+
+@media (min-width: 992px) {
+  .card {
+    width: 50%;  
+    margin: 20px auto;  
   }
 }
