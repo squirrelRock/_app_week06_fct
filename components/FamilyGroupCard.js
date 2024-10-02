@@ -32,7 +32,7 @@ export default function FamilyGroupCard({ groupId, headOfClan, members }) {
       <ul className="list-group">
         {members.length > 0 && (
           members.map(member => {
-            // use pre-made paths from the all-characters list
+            // point to the pre-made paths from the all-characters list
            const genderClass = member.Gender === 1 ? 'male' : 'female';
          
            const linkHref = `/things-id/${member.id}`;

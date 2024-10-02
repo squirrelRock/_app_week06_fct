@@ -138,14 +138,14 @@ div.container.spacing {
   }
 }
 
-.card {
+.card.characters {
   width: 100%;
   margin: 10px auto;
 }
 
 
 @media (min-width: 992px) {
-  .card {
+  .card.characters {
     width: 50%;  
     margin: 20px auto;  
   }
