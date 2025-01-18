@@ -13,7 +13,7 @@ import Layout from '../components/Layout';
 // }
 
 // HOME COMPONENT
-export default function Home({ allDataMain }) {
+export default function Home() {
   return (
     <Layout>
 
