@@ -13,21 +13,11 @@ import Layout from '../components/Layout';
 // }
 
 // HOME COMPONENT
-export default function Home({ allDataMain }) {
+export default function Home() {
   return (
     <Layout>
  
-      <h4 className="mt-3 text-center">Shōgun Characters</h4>
-<div className="d-flex flex-column align-items-center mb-5">
 
-  <Link href="/things" className="btn btn-secondary btn-sm small mt-2 text-center">
-  Character Lists
-  </Link>
-  <Link href="/clans" className="btn btn-secondary btn-sm small mt-2 text-center">
-    Clans and Bonded Relationships
-  </Link>
- 
-</div>
 <hr/>
 <h6 className='mt-4'><strong>Sept 16, 2024</strong></h6>
        <div className='border p-3 mt-1'>
