@@ -26,7 +26,7 @@ export default function Home() {
       <p className="display-6 p-5"> <strong className="display-4">Shōgun</strong> - &#8220;An adaptation from a 1975 best-selling book centered on 17th century feudal Japan on the brink of civil war, set a record on September 15, 2024 for <strong>most Emmys won by a show in a single year, winning 18 in all</strong>...&#8220; <strong>- The New York Times</strong></p>
       </div>
       </div>
-
+      <hr/>
     </Layout>
   );
 }
